@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-section {
+    background-color: red;
+}
+.heading{
+    text-align: center;
+    padding: 29px 0px 15px 0px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.chng-btn {
+    padding-bottom: 234px;
+    text-align:center;
+}
+#change-color {
+    border: none;
+    padding: 20px 34px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    cursor: pointer;
+}
+#change-color:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.color-name{
+    padding-top: 220px;
+    padding-bottom: 52px;
+}
+.color-name h2 {
+    text-align: center;
+    color: #fff;
+    font-size: larger;
+}
