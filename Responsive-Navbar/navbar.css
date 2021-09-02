@@ -1,0 +1,116 @@
+body {
+    background-color: #deedfb;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    background-color: #ffffff;
+    box-shadow: 4px 4px 5px grey;
+}
+
+.logo,.nav-div,.nav-links-img{
+  display: inline-block;
+  width: 33%;
+}
+ ul{
+     padding: 0px;
+ }
+.nav-link {
+    display: inline-block;
+    margin-right: 14px;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.nav-links-img {
+    text-align: end;
+}
+.logo-name {
+    font-family: sans-serif;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.nav-link a:hover{
+    color: #89b8e4;
+    transition: 0.8s;
+}
+.word{
+    color:#72a8d6;
+}
+.brand-img {
+    width: 7%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+ .hamburger{
+     display: none;
+ }
+
+ @media screen and (max-width: 480px) {
+    .nav-links-img {
+      display: none;
+    }
+    .nav-div{
+        height: 0;
+        display: none;
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo-name{
+        width: 82%;
+        margin-bottom: 5px;
+    }
+    .hamburger{
+        position: relative;
+        bottom: 8px;
+    }
+    .nav-div-show {
+        display: block;
+        height: auto;
+    
+    }
+    .nav-link{
+        display: block;
+        padding-bottom: 5px;
+        padding-left: 15px;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nav-div{
+        width: 43%;
+    }
+    .nav-links-img{
+        width: 23%;
+    }
+    .brand-img{
+      width: 10%;
+  }
+}
+
+  @media screen and (max-width: 770px) {
+      .nav-div{
+          width: 45%;
+      }
+      .nav-links-img{
+          width: 20%;
+      }
+      .nav-link a{
+          font-size: 14px;
+      }
+      .brand-img{
+          width: 10%;
+      }
+  }
+
