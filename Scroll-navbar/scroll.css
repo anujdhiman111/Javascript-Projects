@@ -1,0 +1,172 @@
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("land1.jpg");
+    background-repeat: round;
+}
+.nav-logo {
+    width: 8%;
+    padding-left: 2.5rem;
+}
+.photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav-center{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    align-items: center;
+}
+.navbar-links {
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem 7rem;
+}
+.nav-link{
+    list-style-type: none;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.nav-link a:hover {
+    color: #ffffff;
+    transition: 1.5s;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.banner {
+    min-height: 90vh;
+    color: #ffffff;
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+}
+ h1 {
+    margin-top: 0px;
+    font-size: 3rem;
+}
+.container p {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background: none;
+    border: 1px solid #fff;
+    padding: .5rem .8rem;
+}
+a.scroll-link {
+    color: #fff;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+#about,#services,#tours {
+    min-height: 90vh;
+    background-image: url("land1.jpg");
+    background-repeat: round;
+    color: #ffffff;
+    text-align: center;
+}
+.nav-footer p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 0rem;
+    background-color: #0F1F2B;
+    color: #fff;
+    /* font-weight: 400; */
+    font-family: sans-serif;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0F1F2B;
+    z-index: 1;
+}
+
+@media screen and (max-width: 998px){
+    html{
+        font-size: 78%;
+    }
+ } 
+ 
+ @media screen and (max-width: 768px){
+     html{
+         font-size: 70%;
+     }
+ }
+ 
+ @media screen and (max-width: 425px){
+     html{
+         font-size: 65%;
+     }
+     .nav-toggle {
+         display: block;
+         width: 2.8rem;
+         height: 2.5rem;
+         margin-right: 1.5rem;
+        background-color: #0F1F2B;
+        color: #ffffff;
+        border: none;
+        font-size: 2rem;
+
+     }
+     .nav-toggle:focus{
+         outline: none;
+     }
+     .nav-toggle:active{
+        font-size: 1.8rem;
+    }
+     .nav-center {
+         grid-template-columns: none;
+         padding-top: 1rem;
+         background-color: #0F1F2B;
+
+     }
+     .nav-cont {
+         display: none;
+     }
+     .nav-logo{
+         padding-left: 1.5rem;
+         width: 12%;
+     }
+     .nav-header {
+         display: grid;
+         grid-template-columns: 10fr 1fr;
+         align-items: center;
+     }
+     .show-nav-cont {
+        display: block;
+    }
+    .navbar-links {
+        padding-left: 1.5rem;
+        grid-template-columns: none;
+    }
+    .nav-link{
+        padding: .8rem 0rem;
+    }
+    .nav-link a {
+        color: #ffffff;
+    }
+     
+  }
