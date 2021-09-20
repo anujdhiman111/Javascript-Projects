@@ -1,0 +1,77 @@
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3e0ea;
+    font-family: sans-serif;
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6rem;
+}
+.image {
+    width: 100%;
+}
+.head-title {
+    margin-top: 0;
+    color: #4C88B5;
+}
+p {
+    color: #8195a0;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+.deadline {
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
+    grid-gap: 1rem;
+    text-align: center;
+    color: white;
+    grid-template-rows: 4rem;
+    text-transform: uppercase;
+}
+.deadline-format {
+    background-color: #122C43;
+}
+.deadline-format h4 {
+    margin-bottom: .3rem;
+    margin-top: .8rem;
+    font-size: larger;
+}
+span{
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 998px){
+    html{
+        font-size: 87%;
+    }
+ } 
+ 
+ @media screen and (max-width: 768px){
+     html{
+         font-size: 77%;
+     }
+ }
+ 
+ @media screen and (max-width: 425px){
+     html{
+         font-size: 67%;
+     }
+     .section-center {
+         display: block;
+         margin-top: 3rem;
+         margin-bottom: 1rem;
+     }
+     .image-section {
+         margin-bottom: 3rem;
+     }
+ }
