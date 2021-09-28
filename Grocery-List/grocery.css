@@ -1,0 +1,120 @@
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3e0ea;
+}
+p {
+    margin: 0;
+}
+
+.main-block {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: .4rem;
+    padding: 1rem 0rem 2rem 0rem;
+}
+.title {
+    margin-top: 0;
+    color: #31475A;
+    font-family: sans-serif;
+}
+.alert {
+    height: 1.4rem;
+    margin: 0;
+    font-family: monospace;
+}
+.form-control {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 0rem 1.5rem;
+}
+.submit-btn {
+    background-color: #A8D6F7;
+    border: navajowhite;
+    font-family: sans-serif;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+.submit-btn:focus{
+    outline: none;
+}
+#grocery {
+    border: none;
+    background-color: #D3E0EA;
+    padding: .4rem;
+}
+#grocery:focus {
+    outline: none;
+}
+.grocery-list {
+    text-align: initial;
+    padding: 0rem 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.grocery-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: .5rem;
+    
+}
+.edit,.delete{
+    background: transparent;
+    border: none;
+}
+.edit,.delete:focus{
+    outline: none;
+}
+.clear {
+    border: none;
+    background: transparent;
+    color: red;
+    letter-spacing: .2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.grocery-cont {
+    display: none;
+}
+
+.show-cont {
+    display: block;
+}
+
+@media screen and (max-width: 998px){
+    html{
+        font-size: 87%;
+    }
+ } 
+ 
+ @media screen and (max-width: 768px){
+     html{
+         font-size: 77%;
+     }
+     .main-block{
+         width: 50%;
+     }
+     p{
+         font-size: 1.5rem;
+     }
+ }
+ 
+ @media screen and (max-width: 425px){
+     html{
+         font-size: 67%;
+     }
+     .main-block{
+         width: 85%;
+     }
+     .grocery-item{
+         grid-template-columns: 2fr 7rem;
+     }
+ }
