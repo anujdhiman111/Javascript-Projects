@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Rock Paper Scissor Game
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="game.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">
+            Rock Paper Scissor Game
+            </h1>
+        </header>
+        <div class="score-board">
+            <div class="badge" id="user-label">User</div>
+            <div class="badge" id="comp-label">Comp</div>
+            <span id="user-score">0</span>:<span id="comp-score">0</span>
+        </div>
+        <div class="result">
+            <h1 class="para">
+                Waiting For Your Move!!!!! 
+            </h1>
+        </div>
+        <div class="choices">
+            <div class="choice" id="r">
+                <img src="rock.png" class="image"/>
+            </div>
+            <div class="choice" id="p">
+                <img src="hand.png" class="image"/>
+            </div>
+            <div class="choice" id="s">
+                <img src="scissor.png" class="image"/>
+            </div>
+        </div>
+        <div class="message">
+            <p id="action-message">
+                Make your move.
+            </p>
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
